@@ -1,10 +1,10 @@
-# Smart Resume Screener
+# 🧠 Smart Resume Screener
 
-**Smart Resume Screener** is an **AI-powered web application** that automatically classifies resumes into relevant job categories using **Natural Language Processing (NLP)** and **Machine Learning**.  
-It uses **TF-IDF vectorization** and a trained **KNeighborsClassifier** model to predict the job domain from resume text.
+## 📄 Description
+**Smart Resume Screener** is an AI-powered web application that automatically classifies resumes into relevant job categories using **Natural Language Processing (NLP)** and **Machine Learning**.  
+It simplifies hiring by analyzing resumes and categorizing them into domains such as **Data Science**, **Java Developer**, **HR**, **Business Analyst**, **Web Developer**, and more.
 
 ---
-
 ## Project Overview
 
 The **Smart Resume Screener** simplifies hiring by automatically analyzing resumes and classifying them into predefined job categories such as:
@@ -17,53 +17,47 @@ The **Smart Resume Screener** simplifies hiring by automatically analyzing resum
 This saves recruiters time and ensures efficient candidate shortlisting.
 
 ---
-
 ## ⚙️ Key Features
-
--  **Text Cleaning:** Removes punctuation, stopwords, and performs lemmatization using NLTK.  
--  **Feature Extraction:** Uses **TF-IDF** to convert text into numerical vectors.  
--  **Model Training:** Trained using **KNeighborsClassifier** wrapped in a **OneVsRestClassifier**.  
--  **Evaluation:** Metrics such as accuracy, precision, recall, and F1-score ensure performance transparency.  
--  **Interactive Web App:** Built using **Streamlit** for instant, user-friendly predictions.
-
----
-
-##  Model Performance
-
-| Metric | Score |
-|--------|-------|
-| **Train Accuracy** | 0.9883 |
-| **Test Accuracy** | 0.9845 |
-| **Precision (avg)** | 0.98 |
-| **Recall (avg)** | 0.97 |
-| **F1-Score (avg)** | 0.97 |
-
-✅ The model demonstrates excellent performance with minimal overfitting.
+- 🧹 **Text Cleaning:** Removes punctuation, stopwords, and performs lemmatization using NLTK.  
+- 🔤 **Feature Extraction:** Implemented both **TF-IDF vectorization** and **Word2Vec embeddings** for feature representation.  
+- 🧠 **Model Training:** Trained using `KNeighborsClassifier` wrapped in a `OneVsRestClassifier`.  
+- 📊 **Evaluation:** Measured using Accuracy, Precision, Recall, and F1-score.  
+- 💻 **Interactive Web App:** Built with Streamlit for instant, user-friendly predictions.
 
 ---
 
-##  Technologies Used
-
-- Python   
-- Scikit-learn  
-- NLTK  
-- Pandas, NumPy  
-- Streamlit  
-- Pickle  
-
----
-
-## 📊 Results Summary
-
-- **Accuracy:** 98.45%  
-- **Precision:** 0.98  
-- **Recall:** 0.97  
-- **F1-Score:** 0.97  
-
-The confusion matrix has been saved as `confusion_matrix.png` for visualization.
+## 🧰 Technologies Used
+- **Python**
+- **Scikit-learn**
+- **NLTK**
+- **Pandas**
+- **NumPy**
+- **Streamlit**
+- **Pickle**
 
 ---
 
-## 🖥️ Access the Application
+## 📈 Model Performance Comparison
 
-To run the app locally in Streamlit: ##http://localhost:8504/ 
+| **Metric**        | **TF-IDF** | **Word2Vec** |
+|--------------------|------------|--------------|
+| **Train Accuracy** | 0.9883     | 0.9467       |
+| **Test Accuracy**  | 0.9845     | 0.8497       |
+| **Precision (avg)**| 0.98       | 0.88         |
+| **Recall (avg)**   | 0.97       | 0.85         |
+| **F1-Score (avg)** | 0.97       | 0.84         |
+
+---
+
+## 🧠 Model Insights
+- Both **TF-IDF** and **Word2Vec** embeddings provided strong classification performance across multiple job domains.  
+- The **TF-IDF** model achieved higher test accuracy, ensuring efficient and reliable resume categorization.  
+- A **confusion matrix visualization** was generated to analyze model predictions and performance.
+
+---
+
+## 🖥️ Application Access
+To run the application locally with Streamlit, use the following command:http://localhost:8504/
+
+
+
