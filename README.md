@@ -51,7 +51,6 @@ This saves recruiters time and ensures efficient candidate shortlisting.
 
 ## 🧠 Model Insights
 - Both **TF-IDF** and **Word2Vec** embeddings provided strong classification performance across multiple job domains.  
-- The **TF-IDF** model achieved higher test accuracy, ensuring efficient and reliable resume categorization.  
 - A **confusion matrix visualization** was generated to analyze model predictions and performance.
 
 ---
